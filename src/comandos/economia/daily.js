@@ -6,7 +6,7 @@ $reply[$messageID;false]
 $if[$getGuildVar[sistemarpg]==0]
  ❌ | Esse comando faz parte do Sistema de Rpg, peça para algum Administror ou Superior ativar esse sistema usando \`s.setrpg on\`!
 $elseif[$getGuildVar[sistemarpg]==1]
-$globalCooldown[24h; ❌ | Você já resgatou a seu Rpg Diário, volte novamente <t:$sum[$getTimestamp;$getCooldown[global]]:R> para resgatá-lo!]
+$globalCooldown[24h; ❌ | Você já resgatou a seu Rpg Diário, volte novamente <t:$truncate[$math[$math[$dateStamp+$getCooldownTime[24h;globalUser;daily;$authorID]]/1000]]:R> para resgatá-lo!]
 $title[ Diário ]
 $description[ Você recebeu seu Rpg Diário  e conseguiu **$numberSeparator[$random[1000;4500]]** Coins!
 E veja só, você também recebeu alguns itens:
