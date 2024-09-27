@@ -1,6 +1,6 @@
 module.exports = {
     Bot: {
-        token: "",
+        token: "DISCORD_BOT_TOKEN",
         prefix: "$getGuildVar[prefix]",
         events: [
             "onMessage",
