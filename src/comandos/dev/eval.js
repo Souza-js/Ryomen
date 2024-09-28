@@ -8,6 +8,6 @@ $djsEval[$messageSlice[1];true]
 $else
 $eval[$message]
 $endif
-$onlyIf[$getGlobalUserVar[airport_team]==true;]
+$onlyIf[$checkContains[$clientOwnerIDs[,];$authorID]==true;]
 `
 }
